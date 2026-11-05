@@ -20,6 +20,16 @@ REQUIRED = [
     "memory/decisions/README.md",
     "memory/projects/README.md",
     "inbox/README.md",
+    "runbooks/production/database-readonly.md",
+    "workflows/production-readonly-audit/workflow.md",
+    "workflows/agent-handoff/workflow.md",
+    "memory/projects/agentic-commerce-ap.md",
+    "memory/projects/shopline-ap.md",
+    "memory/projects/cps-billing.md",
+    "memory/projects/ai-sales-commission.md",
+    "memory/projects/ac-radar.md",
+    "memory/projects/wuxian-as-cooperation.md",
+    "memory/decisions/2026-11-04-shopline-ap-phase-one.md",
     "scripts/build-adapters.py",
     "scripts/validate.py",
     ".github/workflows/validate.yml",
@@ -33,6 +43,8 @@ GENERATED = [
 SENSITIVE = [
     re.compile(r"gh[pousr]_[A-Za-z0-9_\-]{20,}"),
     re.compile(r"sk-[A-Za-z0-9]{20,}"),
+    re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
+    re.compile(r"postgres(?:ql)?://[^<\s]+:[^<\s]+@"),
     re.compile(r"-----BEGIN (?:RSA|OPENSSH|EC|DSA|PRIVATE) KEY-----"),
 ]
 PLACEHOLDER = re.compile(r"\b(?:TODO|TBD)\b")

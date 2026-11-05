@@ -1,6 +1,6 @@
 # Agent 适配层
 
-不同 AI 平台的入口文件语法和自动加载位置不同。正式内容只在 `core/`、`workflows/` 和 `memory/` 维护；运行 `python scripts/build-adapters.py` 生成根目录入口文件。
+不同 AI 平台的入口文件语法和自动加载位置不同。正式内容只在 `core/`、`workflows/`、`memory/` 和 `runbooks/` 维护；运行 `python scripts/build-adapters.py` 生成根目录入口文件。
 
 当前生成入口：
 

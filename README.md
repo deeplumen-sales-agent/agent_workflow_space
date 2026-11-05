@@ -14,6 +14,7 @@
 - `workflows/`：可复用的工作流和模板，例如 `workflows/prd-writing/`。
 - `memory/`：已经确认的长期记忆、项目背景和决策记录。
 - `inbox/`：各 agent 提交的候选记忆，未经确认不得视为正式规则。
+- `runbooks/`：脱敏后的生产只读连接、核查和操作手册。
 - `adapters/`：各 AI 平台的适配说明和生成结果说明。
 - `scripts/`：生成适配文件和执行仓库校验的脚本。
 - `docs/superpowers/`：本仓库的设计和实施记录。
@@ -35,6 +36,7 @@ python scripts/validate.py        # Windows 也可以使用：py -3 scripts/vali
 - 新工作流使用 `feat/<name>` 分支；新记忆使用 `memory/<name>` 分支。
 - 候选记忆先提交到 `inbox/`，确认后再移动到正式目录，并在提交说明中注明来源。
 - 不把 API key、密码、生产连接串、客户个人数据或其他秘密写入仓库。
+- 生产连接手册只保存流程、变量名、验证查询和安全边界；真实值留在受控秘密管理器中。
 - 如果两个来源冲突，保留冲突记录并标记为 `pending_confirmation`，不要静默覆盖。
 
 ## 优先级
