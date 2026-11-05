@@ -30,8 +30,8 @@
 - Create: `workflows/prd-writing/template.md`
 - Create: `workflows/prd-writing/checklist.md`
 
-- [ ] **Step 1:** 写入基础规则、记忆生命周期、证据状态和 PRD 工作流。
-- [ ] **Step 2:** 检查每条规则都有明确范围和状态表达。
+- [x] **Step 1:** 写入基础规则、记忆生命周期、证据状态和 PRD 工作流。
+- [x] **Step 2:** 检查每条规则都有明确范围和状态表达。
 
 ### Task 2: 建立记忆审核边界
 
@@ -41,8 +41,8 @@
 - Create: `memory/projects/README.md`
 - Create: `inbox/README.md`
 
-- [ ] **Step 1:** 写入候选记忆的 front matter 和晋级规则。
-- [ ] **Step 2:** 确认正式记忆与临时上下文分层。
+- [x] **Step 1:** 写入候选记忆的 front matter 和晋级规则。
+- [x] **Step 2:** 确认正式记忆与临时上下文分层。
 
 ### Task 3: 建立平台适配和自动校验
 
@@ -53,9 +53,9 @@
 - Create: `.github/workflows/validate.yml`
 - Create: `.gitignore`
 
-- [ ] **Step 1:** 编写无依赖的适配文件生成脚本。
-- [ ] **Step 2:** 编写目录、敏感内容和生成标记校验脚本。
-- [ ] **Step 3:** 配置 GitHub Actions 在 push 和 pull request 时运行校验。
+- [x] **Step 1:** 编写无依赖的适配文件生成脚本。
+- [x] **Step 2:** 编写目录、敏感内容和生成标记校验脚本。
+- [x] **Step 3:** 配置 GitHub Actions 在 push 和 pull request 时运行校验。
 
 ### Task 4: 验证和提交
 
@@ -63,7 +63,7 @@
 - Modify: `README.md`
 - Create: `CONTRIBUTING.md`
 
-- [ ] **Step 1:** 运行 `python scripts/build-adapters.py`。
-- [ ] **Step 2:** 运行 `python scripts/validate.py`。
-- [ ] **Step 3:** 检查 `git diff --check` 和生成文件内容。
-- [ ] **Step 4:** 提交并推送到远端分支。
+- [x] **Step 1:** 运行 `python scripts/build-adapters.py`。
+- [x] **Step 2:** 运行 `python scripts/validate.py`。
+- [x] **Step 3:** 检查 `git diff --check` 和生成文件内容。
+- [x] **Step 4:** 提交并推送到远端分支。
